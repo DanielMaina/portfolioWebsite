@@ -1,38 +1,38 @@
-// import React from 'react'
-// import '../../App.css';
+import React, { Component } from 'react';
 
+import '../../../src/App.css';
 
-// import profile from '../../assets/profile.jpg';
+import profile from '../../assets/profile.jpg';
 
-// export default function AboutMe() {
-//     return (
-//         <div>
-//             <img src={profile} alt='profile' className='profile' />
+class AboutMe extends Component {
+  state = { displayBio : false};
 
-//         {
-//           this.state.displayBio ? (
-//             <div>
-//               <p>I live in Ontario, I code or read everyday</p>
-//               <p>My favorite language is Javascript, I think React.js is awsome</p>
-//               <p>Besides coding, I also love basketball and hip hop</p>
-//               <button onClick={this.toggleDisplayBio}>Show less</button>
-//             </div>
-//           ) : (
-//             <div>
-//               <button onClick={this.toggleDisplayBio}>Read more</button>
-//             </div>
-//           )
-//         }
-//         </div>
-//     )
-// }
+  toggleDisplayBio = () => {
+    this.setState({ displayBio : !this.state.displayBio });
+  }
 
-import React from 'react'
-
-export default function AboutMe() {
-  return (
-    <div>
-      Hi
-    </div>
-  )
+  render() {
+    return (
+      <div>
+      <img src={profile} alt='profile' className='profile' />  
+      <p>I'm always looking to learn new tools for programming</p>
+        {
+          this.state.displayBio ? (
+            <div>
+              <p>I live in Ontario, I code or read everyday</p>
+              <p>My favorite language is Javascript, I think React.js is awsome</p>
+              <p>Besides coding, I also love basketball and hip hop</p>
+              <button onClick={this.toggleDisplayBio}>Show less</button>
+            </div>
+          ) : (
+            <div>
+              <button onClick={this.toggleDisplayBio}>Read more</button>
+            </div>
+          )
+        }
+      </div>
+    )
+  }
 }
+
+export default AboutMe;

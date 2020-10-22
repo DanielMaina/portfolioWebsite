@@ -33,25 +33,10 @@ class Home extends Component {
 
   render() {
     return (
-      <div>        
+      <div className="container">        
         <h1>Portfolio</h1>
         <p>My name is Dan. I'm a software developer,</p>
         <Title />
-        <p>I'm always looking to learn new tools for programming</p>
-        {
-          this.state.displayBio ? (
-            <div>
-              <p>I live in Ontario, I code or read everyday</p>
-              <p>My favorite language is Javascript, I think React.js is awsome</p>
-              <p>Besides coding, I also love basketball and hip hop</p>
-              <button onClick={this.toggleDisplayBio}>Show less</button>
-            </div>
-          ) : (
-            <div>
-              <button onClick={this.toggleDisplayBio}>Read more</button>
-            </div>
-          )
-        }
         <hr />
         <AboutMe />
         <hr />

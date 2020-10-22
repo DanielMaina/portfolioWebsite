@@ -237,6 +237,15 @@
   }
   /* end of show menu */
   
+  /* Images */
+  .profile {
+    width: 200;
+    height: 200px;
+    border-radius: 100px;
+  }
+  /* end of Images */
+
+
   /* Banner */
   .banner {
     display: inline-block;
