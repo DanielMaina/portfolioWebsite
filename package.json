@@ -1,0 +1,27 @@
+{
+  "name": "portfolioWebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "node-sass": "^4.14.1",
+    "parcel-bundler": "^1.12.4",
+    "popper.js": "^1.16.1",
+    "react": "^17.0.0",
+    "react-bootstrap": "^1.3.0",
+    "react-dom": "^16.6.3",
+    "react-icons": "^3.11.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "sass": "^1.27.0"
+  },
+  "scripts": {
+    "start": "parcel public/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

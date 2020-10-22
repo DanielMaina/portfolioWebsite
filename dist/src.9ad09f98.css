@@ -1,0 +1,28 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(OpenSans-Light.1bae283c.ttf);
+    font-weight: 800;
+  }
+  
+  @font-face {
+    font-family: MontserratAlternates;
+    src: url(MontserratAlternates-Bold.8a397857.ttf);
+  }
+  
+  body {
+    text-align: center;
+    font-size: 20px;
+    padding: 2.5%;
+    font-family: 'OpenSans';
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'MontserratAlternates';
+  }
+  
+  .profile {
+    width: 200;
+    height: 200px;
+    border-radius: 100px;
+  }
+  
