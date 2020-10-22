@@ -13,9 +13,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Route exact path="/" component={Home} 
-      />
+      <Switch>
+      <Route exact path="/" component={Home} />
       <Route exact path="/history" component={History} />
+      </Switch>
     </>
 
   );

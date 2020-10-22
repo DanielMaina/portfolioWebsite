@@ -18,6 +18,7 @@ class SocialProfiles extends Component{
     return (
       <div>
         <h2>Connect with me</h2>
+        <h5>danielmaina6@gmail.com</h5>
         <div>
           {
             SOCIAL_PROFILES.map(SOCIAL_PROFILE => {

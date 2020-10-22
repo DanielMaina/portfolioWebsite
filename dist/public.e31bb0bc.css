@@ -32,7 +32,25 @@
     overflow: hidden;
     padding: 0 3rem;
   }
+
+  .landing {
+    margin-top: -70px;
+  }
   
+  /* Hero */
+  .defaultHero {
+    min-height: calc(100vh - 66px);
+    background: url("/nasa-Q1p7bh3SHj8-unsplash.72f796e6.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .roomsHero {
+    /* background-image: url("./images/room-2.jpeg"); */
+    min-height: 60vh;
+  }  
+  /* end of Hero */
+
   /* banner start */
   .banner {
     color: #fff;
@@ -40,7 +58,30 @@
     position: relative;
   }
   /* banner end */
+
+  /* Title */
+  .title-fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+    animation-duration: 2s;
+  }
   
+  .title-fade-in {
+    opacity: 100;
+    animation-name: fade-in;
+    animation-duration: 2s;
+  }
+
+  @keyframes fade-out {
+    from {opacity: 100}
+    to {opacity: 0}
+  }
+
+  @keyframes fade-in {
+    from {opacity: 0}
+    to {opacity: 100}
+  }
+  /* end of Title */  
   
   /* showcase */
   .showcase {
@@ -155,23 +196,19 @@
     opacity: 0;
   }
   
-  .menu-wrap .hamburger {
+  /* Solution to navbar icon */
+  .nav-icon {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     width: 60px;
     height: 60px;
-    padding: 1rem;
-    background: var(--primary-color);
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  /* Solution to navbar icon */
-  .nav-icon {
-    size: 2.5rem;
+    color: #fff;
   }
   
   /* Show Menu */
@@ -245,11 +282,16 @@
   }
   /* end of Images */
 
+  /* About */
+  .p-sp {
+    width: 500px;
+  }
+  /* end of About*/
+
 
   /* Banner */
   .banner {
     display: inline-block;
-    background: rgba(0, 0, 0, 0.5);
     color: var(--mainWhite);
     padding: 2rem 1rem;
     text-align: center;
@@ -286,6 +328,33 @@
     }
   }
   /* End of Banner */
+
+    /* Projects */
+    .projects {
+      columns: 3;
+      column-gap: 3em;
+    }
+
+    .col-1 {
+      width:100px;
+      display: inline-block;
+    }
+    .col-2 {
+      width:200px;
+    }
+    .col-3 {
+      width:350px;
+    }
+
+  p {
+    width: 200px;
+  }
+
+  .moreprojects {
+    columns: 3;
+    column-gap: 3em;
+  }
+    /* end of Projects */
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

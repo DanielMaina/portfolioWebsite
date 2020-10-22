@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 //import Bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 import Projects from '../components/portfolio/Projects';
 import SocialProfiles from '../components/contact/SocialProfiles';
-import MoreProjects from '../components/portfolio/MoreProjects';
 import AboutMe from '../components/about/AboutMe';
 import Title from '../components/landing/Title';
+import Hero from '../components/landing/Hero';
+import Banner from '../components/landing/Banner';
 //import '../App.scss';
 
 // import Container from 'react-bootstrap/Container';
@@ -16,35 +17,24 @@ import PROJETS from '../data/projects';
 
 
 class Home extends Component {
-  state = { displayBio : false};
-
-// constructor(){
-//   super();
-//   this.state = { displayBio: false };
-//
-//   console.log('Component this', this);
-//
-//   this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
-// }
-
-  toggleDisplayBio = () => {
-    this.setState({ displayBio : !this.state.displayBio });
-  }
-
   render() {
     return (
-      <div className="container">        
-        <h1>Portfolio</h1>
-        <p>My name is Dan. I'm a software developer,</p>
+      <div className="landing">
+        <Hero> 
+        <Banner
+          title="Dan Maina"
+        >
         <Title />
+        </Banner>  
+        </Hero>
+        <div className="container">
         <hr />
         <AboutMe />
         <hr />
         <Projects />
         <hr />
-        <MoreProjects />
-        <hr />
         <SocialProfiles />
+        </div>        
       </div>
     )
   }
